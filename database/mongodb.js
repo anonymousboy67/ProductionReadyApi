@@ -14,7 +14,8 @@ const connectToDatabase = async () => {
     console.log(`✅ Connected to MongoDB in ${NODE_ENV} mode`);
   } catch (error) {
     console.error("❌ Error connecting to database:", error);
-    process.exit(1); // ❗️ This is the correct function to stop the app
+    // eslint-disable-next-line no-undef
+    process.exit(1); 
   }
 };
 
